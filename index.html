@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shruti Mishra — UI/UX Designer</title>
+<meta name="description" content="Shruti Mishra is a UI/UX designer who designs digital experiences that make complex things feel simple.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#home" class="brand" aria-label="Shruti Mishra, home"><span class="brand-mark">s</span><span>Shruti Mishra</span></a>
+  <nav class="nav-links" id="navLinks" aria-label="Primary">
+    <span class="nav-pill" id="navPill"></span>
+    <a href="#home" data-sec="home">Home</a>
+    <a href="#work" data-sec="work">Work</a>
+    <a href="#about" data-sec="about">About</a>
+    <a href="#experience" data-sec="experience">Experience</a>
+    <a href="#contact" data-sec="contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <span class="status"><i class="dot"></i>Open to new roles</span>
+    <a href="#contact" class="btn">Let's talk <span class="arr">→</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<div class="sheet" id="sheet" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a class="big" href="#home">Home</a>
+    <a class="big" href="#work"><em>Work</em></a>
+    <a class="big" href="#about">About</a>
+    <a class="big" href="#experience"><em>Experience</em></a>
+    <a class="big" href="#contact">Contact</a>
+  </nav>
+  <div class="mono" style="opacity:.6">hello@shrutimishra.design</div>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero wrap" id="home" data-screen-label="Hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="hero-eyebrow mono rv"><span>Portfolio ’26</span><span class="rule"></span><span>Based in Bengaluru, IN</span></div>
+      <h1 class="hero-name rv d1">
+        <span class="first">Shruti</span>
+        <span class="last">Mishra<span class="star" aria-hidden="true">✳</span></span>
+      </h1>
+      <div class="hero-role rv d2">
+        <span class="role"><b>UI/UX Designer</b></span>
+      </div>
+      <p class="hero-statement rv d2">I design digital experiences that make <em>complex things feel simple.</em></p>
+      <div class="hero-cta rv d3">
+        <a href="#work" class="btn">See selected work <span class="arr">↓</span></a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="desk-wrap rv d2">
+      <div class="desk" id="desk" role="group" aria-label="Shruti's desk — each object opens a section">
+        <div class="desk-inner" id="deskInner">
+          <span class="pencil" aria-hidden="true"></span>
+
+          <a class="obj laptop" href="#work" aria-label="Laptop — selected work">
+            <span class="tag"><b>01</b> Selected work</span>
+            <div class="lt-screen"><div class="lt-display">
+              <div class="lt-bar"><span>shruti.work</span><i><span></span></i></div>
+              <div class="lt-title">Selected <em>work</em> (3)</div>
+              <div class="lt-tiles"><span class="lt-tile"></span><span class="lt-tile"></span><span class="lt-tile"></span></div>
+            </div></div>
+            <div class="lt-base"></div>
+          </a>
+
+          <a class="obj notebook" href="#about" aria-label="Notebook — about Shruti">
+            <span class="tag"><b>02</b> About me</span>
+            <div class="nb">
+              <div class="nb-label"><small>Notebook no. 7</small>About Shruti</div>
+              <span class="nb-sticker">hi!</span>
+            </div>
+          </a>
+
+          <button class="obj polaroid" id="polaroid" aria-label="Polaroid — flip for a personal fact">
+            <span class="tag"><b>03</b> Flip me</span>
+            <div class="pl-card">
+              <div class="pl-face">
+                <div class="pl-photo">photo of shruti<br>(drop in)</div>
+                <span class="pl-cap">me, mid-sketch</span>
+              </div>
+              <div class="pl-face pl-back">
+                <span id="factLabel">Fact 1 / 4</span>
+                <p id="factText">I've filled 7 notebooks with flows before opening Figma.</p>
+              </div>
+            </div>
+          </button>
+
+          <a class="obj swatches" href="#skills" aria-label="Swatch fan — skills and process">
+            <span class="tag"><b>04</b> Skills &amp; process</span>
+            <div class="sw-stack">
+              <span class="sw"><i style="background:var(--tomato)"></i><b>Research</b></span>
+              <span class="sw" style="left:18%"><i style="background:var(--butter)"></i><b>UX</b></span>
+              <span class="sw" style="left:36%"><i style="background:var(--mint)"></i><b>UI</b></span>
+              <span class="sw" style="left:54%"><i style="background:var(--ink)"></i><b>Systems</b></span>
+            </div>
+          </a>
+
+          <a class="obj envelope" href="#contact" aria-label="Envelope — contact Shruti">
+            <span class="tag"><b>05</b> Say hello</span>
+            <div class="env">
+              <div class="env-letter">Let's talk.</div>
+              <div class="env-flap"></div>
+              <div class="env-front"></div>
+              <span class="env-to">To: Shruti<br>Re: a problem worth solving</span>
+              <span class="env-stamp"></span>
+            </div>
+          </a>
+
+          <span class="mug" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="desk-legend mono" aria-label="Desk shortcuts">
+        <button data-go="#work"><b>01</b> Laptop · Work</button>
+        <button data-go="#about"><b>02</b> Notebook · About</button>
+        <button data-go="polaroid"><b>03</b> Polaroid · Fun fact</button>
+        <button data-go="#skills"><b>04</b> Swatches · Skills</button>
+        <button data-go="#contact"><b>05</b> Envelope · Contact</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot mono">
+    <span class="scroll-cue"><i></i>Scroll, or explore the desk</span>
+    <span>Currently — Senior Product Designer at Plum</span>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section wrap" id="work" data-screen-label="Work">
+  <div class="sec-head">
+    <div>
+      <div class="sec-kicker mono rv"><span class="num">01</span><span>Selected work</span></div>
+      <h2 class="sec-title rv d1">Three projects, <em>told properly.</em></h2>
+    </div>
+    <p class="sec-sub rv d2">Each one started with a messy, real-world problem. Click any project for the full story: the research, the decisions, and what I'd do differently.</p>
+  </div>
+  <div class="projects" id="projects"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about" data-screen-label="About">
+  <div class="wrap">
+    <div class="sec-kicker mono rv"><span class="num" style="color:var(--butter)">02</span><span>About</span></div>
+    <div class="about-grid">
+      <div class="rv">
+        <div class="portrait">portrait — shruti, natural light<span class="portrait-sticker">that's me</span></div>
+      </div>
+      <div>
+        <p class="about-lead rv d1">I'm a designer who asks <span class="hl">“why”</span> one more time than is comfortable — then sweats the pixels until the answer feels obvious.</p>
+        <div class="about-body rv d2">
+          <p>For six years I've worked on products where the stakes are real: money, health, getting home on time. I like problems that look complicated from the outside, and I like sitting with people until I see them from the inside.</p>
+          <p>I studied communication design at NID, then fell for interaction design through a summer of usability tests at a fintech startup. I've been translating between engineers, researchers and users ever since.</p>
+        </div>
+
+        <div class="principles rv" id="principles">
+          <div class="principle open">
+            <button aria-expanded="true"><span class="n">P/01</span><span>Clarity beats cleverness</span><span class="pm">+</span></button>
+            <div class="ans"><div><p>If a user has to admire the interface, it's in the way. I'd rather design something that disappears into the task, and save the delight for the moments that have earned it.</p></div></div>
+          </div>
+          <div class="principle">
+            <button aria-expanded="false"><span class="n">P/02</span><span>Start with the hardest user</span><span class="pm">+</span></button>
+            <div class="ans"><div><p>Designing for the tired, the distracted, the first-timer and the screen-reader user usually produces a better product for everyone. Accessibility is where I start, not something I check at the end.</p></div></div>
+          </div>
+          <div class="principle">
+            <button aria-expanded="false"><span class="n">P/03</span><span>Prototype to think, not to show</span><span class="pm">+</span></button>
+            <div class="ans"><div><p>Rough prototypes in front of real people beat polished decks in front of stakeholders. I build early, test often and stay comfortable being wrong in week two.</p></div></div>
+          </div>
+          <div class="principle">
+            <button aria-expanded="false"><span class="n">P/04</span><span>Systems are a kindness</span><span class="pm">+</span></button>
+            <div class="ans"><div><p>A good design system is a gift to your future self and to every engineer who touches the code. I document decisions, not just components.</p></div></div>
+          </div>
+        </div>
+
+        <div class="offclock rv">
+          <h3 class="mono">Off the clock</h3>
+          <div class="interests">
+            <span class="interest" style="--c:var(--butter);--tilt:-3deg">Film photography</span>
+            <span class="interest" style="--c:var(--blush);--tilt:2deg">Kathak, 12 years</span>
+            <span class="interest" style="--c:var(--mint);--tilt:-2deg">Hand-lettering</span>
+            <span class="interest" style="--c:#C9D1FF;--tilt:3deg">Long train journeys</span>
+            <span class="interest" style="--c:var(--butter);--tilt:-1deg">Over-annotated sketchbooks</span>
+            <span class="interest" style="--c:var(--blush);--tilt:2deg">Filter coffee, strong</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section wrap" id="process" data-screen-label="Process">
+  <div class="sec-head">
+    <div>
+      <div class="sec-kicker mono rv"><span class="num">03</span><span>Process</span></div>
+      <h2 class="sec-title rv d1">How I <em>get there.</em></h2>
+    </div>
+    <p class="sec-sub rv d2">Six stages, but rarely in a straight line. Validation often sends me back to Understand, and I count that as the process working, not failing.</p>
+  </div>
+  <div class="rv">
+    <div class="proc-steps" role="tablist" aria-label="Design process" id="procSteps"><span class="proc-track" id="procTrack"></span></div>
+    <div class="proc-panel" id="procPanel" role="tabpanel"></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills" id="skills" data-screen-label="Skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-kicker mono rv"><span class="num">04</span><span>Skills</span></div>
+        <h2 class="sec-title rv d1">What I bring <em>to the table.</em></h2>
+      </div>
+      <p class="sec-sub rv d2">No percentage bars, just what each skill means in practice. Hover or tap a skill.</p>
+    </div>
+    <div class="skill-wall rv" id="skillWall"></div>
+    <div class="skill-detail" id="skillDetail" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section wrap" id="experience" data-screen-label="Experience">
+  <div class="sec-head">
+    <div>
+      <div class="sec-kicker mono rv"><span class="num">05</span><span>Experience</span></div>
+      <h2 class="sec-title rv d1">Six years, <em>four chapters.</em></h2>
+    </div>
+    <p class="sec-sub rv d2">From pushing pixels to shaping product direction. Open a chapter to see what I owned and what changed because of it.</p>
+  </div>
+  <div class="exp-list rv" id="expList"></div>
+  <div class="exp-note mono rv"><span>Full CV on request</span>·<a href="#contact" style="text-decoration:underline;text-underline-offset:3px">ask me for it</a></div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" data-screen-label="Contact">
+  <div class="wrap">
+    <div class="sec-kicker mono rv"><span class="num" style="color:var(--ink)">06</span><span style="color:var(--ink)">Contact</span></div>
+    <p class="contact-q rv d1">Have a problem worth solving?</p>
+    <h2 class="contact-big rv d2" aria-label="Let's talk."><span class="letter">L</span><span class="letter">e</span><span class="letter">t</span><span class="letter">’</span><span class="letter">s</span>&nbsp;<span class="letter">t</span><span class="letter">a</span><span class="letter">l</span><span class="letter">k</span><span class="letter">.</span></h2>
+    <div class="contact-row">
+      <div class="rv">
+        <p class="mono" style="margin-bottom:14px;opacity:.75">Write to me. I reply within two days.</p>
+        <div class="mail">
+          <a class="mail-btn" href="mailto:hello@shrutimishra.design">hello@shrutimishra.design</a>
+          <button class="copy-btn" id="copyBtn">Copy</button>
+        </div>
+      </div>
+      <div class="socials rv d1">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+        <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble <span>↗</span></a>
+        <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance <span>↗</span></a>
+        <a href="https://medium.com/" target="_blank" rel="noopener">Writing on Medium <span>↗</span></a>
+      </div>
+    </div>
+    <div class="foot mono">
+      <span>© 2026 Shruti Mishra</span>
+      <span>Designed &amp; built with care, in plain HTML/CSS</span>
+      <button id="toTop">Back to the desk ↑</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- CASE STUDY -->
+<div class="case-wipe" id="wipe"></div>
+<article class="case" id="case" aria-modal="true" role="dialog" aria-label="Case study" data-screen-label="Case study"></article>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
